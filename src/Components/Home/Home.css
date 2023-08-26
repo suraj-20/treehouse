@@ -1,0 +1,88 @@
+:root {
+  --primaryColor: #5fcf80;
+  --secondaryColor: #53bbb4;
+  --blackColor: #000000;
+  --textColor: #b2bac2;
+  --whiteColor: #ffffff;
+  --smallTextColor: #d3d9dd;
+  --blueColor: #00a4ff;
+  --purpleColor: #7d669e;
+  --grayColor: #808f9c;
+}
+
+.homeSection {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.imgDiv {
+  margin-top: 50px;
+  width: 100%;
+  height: 75vh;
+}
+
+.imgDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.homeContent {
+  position: absolute;
+  text-align: center;
+  bottom: 8rem;
+}
+
+.textDiv {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.btn {
+  background: transparent;
+  color: white;
+  outline: 3px solid white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+}
+
+@media screen and (max-width: 769px) {
+  .imgDiv {
+    margin-top: 50px;
+    height: 65vh;
+  }
+
+  .textDiv {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.4rem 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 389px) {
+
+  .textDiv {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.3rem 1rem;
+  }
+}

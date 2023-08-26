@@ -1,0 +1,135 @@
+:root {
+  --primaryColor: #5fcf80;
+  --secondaryColor: #53bbb4;
+  --blackColor: #000000;
+  --textColor: #b2bac2;
+  --whiteColor: #ffffff;
+  --smallTextColor: #d3d9dd;
+  --blueColor: #00a4ff;
+  --purpleColor: #7d669e;
+  --grayColor: #808f9c;
+  --sideBarColor: #252b30;
+}
+
+.header {
+  position: fixed;
+  background: var(--whiteColor);
+  width: 100%;
+  padding: 1rem 1.5rem;
+  justify-content: space-around;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.13);
+}
+
+.logo {
+  color: var(--primaryColor);
+  width: 500;
+}
+
+.navBar {
+  font-size: 1rem;
+  color: var(--blackColor);
+}
+
+.navLists {
+  gap: 1.5rem;
+}
+
+.navLink {
+  font-size: 0.9rem;
+  color: var(--blackColor);
+  font-weight: 600;
+}
+
+.navItem .icon {
+  font-size: 1.2rem;
+  color: var(--grayColor);
+  transform: translateY(4px);
+  transition: 0.3s ease-in-out;
+}
+
+.icon:hover {
+  color: #000000;
+}
+
+.navItem-freeTrial .navLink {
+  color: var(--primaryColor);
+}
+
+.closeNavbar,
+.toggleNavbar {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  .navBar {
+    flex-direction: column;
+    position: absolute;
+    background: var(--sideBarColor);
+    right: -500px;
+    top: 0;
+    width: 40%;
+    height: 100vh;
+    transform: translateX(50px);
+    padding-top: 3.3rem;
+    z-index: 0;
+    box-shadow: 50px 0 0 hsl(207, 13%, 17%);
+  }
+
+  .activeNavbar {
+    right: 0;
+    transition: 0.6s ease-in-out;
+  }
+
+  .navLists {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .navItem {
+    /* margin-top: 1rem; */
+    padding: 0.5rem;
+    float: left;
+    text-align: start;
+    width: 90%;
+    margin-left: 1rem;
+  }
+
+  .current {
+    background: var(--blackColor);
+  }
+
+  .current .navLink {
+    color: var(--whiteColor);
+  }
+
+  .navItem-freeTrial {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: fit-content;
+  }
+
+  .navItem-freeTrial .navLink {
+    padding: 0.5rem 1rem;
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    border-radius: 0.5rem;
+  }
+
+  .toggleNavbar,
+  .closeNavbar {
+    display: block;
+  }
+
+  .closeNavbar {
+    position: absolute;
+    top: 15px;
+    left: -25px;
+    /* transition: 0.5s ease-out; */
+  }
+}

@@ -18,6 +18,9 @@
   border-bottom: 1px solid #beccd2;
   margin: 0 auto;
   padding: 10px 0 8px 0;
+  position: sticky;
+  top: 75px;
+  z-index: 1000;
 }
 
 .sticky-navbar {
@@ -46,13 +49,12 @@
 
 .nav-anchor {
   font-size: 0.8rem;
-  color: #31319bba;
-  font-weight: 400;
+  color: #182946ba;
+  font-weight: 550;
 }
 
 .nav-anchor:hover {
   color: var(--blackColor);
-  font-weight: 400;
 }
 
 @media screen and (max-width: 920px) {

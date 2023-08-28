@@ -1,0 +1,80 @@
+:root {
+  --primaryColor: #5fcf80;
+  --secondaryColor: #53bbb4;
+  --blackColor: #000000;
+  --textColor: #b2bac2;
+  --whiteColor: #ffffff;
+  --subNavColor: #dbe1e3;
+  --smallTextColor: #d3d9dd;
+  --blueColor: #00a4ff;
+  --purpleColor: #7d669e;
+  --grayColor: #808f9c;
+}
+
+.subNavSection {
+  background: var(--subNavColor);
+  width: 100%;
+  height: 15vh;
+  border-bottom: 1px solid #beccd2;
+  margin: 0 auto;
+  padding: 10px 0 8px 0;
+}
+
+.sticky-navbar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.subNavList {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 70px;
+  flex-wrap: wrap;
+}
+
+.SubNavItem {
+  margin-left: 12px;
+}
+
+.children {
+  margin-top: 1rem;
+}
+
+.nav-anchor {
+  font-size: 0.8rem;
+  color: #31319bba;
+  font-weight: 400;
+}
+
+.nav-anchor:hover {
+  color: var(--blackColor);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 920px) {
+  .subNavSection {
+    height: 18vh;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .subNavSection {
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .subNavSection {
+    height: 22vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .subNavSection {
+    height: 25vh;
+  }
+}
